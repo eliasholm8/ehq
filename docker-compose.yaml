@@ -1,5 +1,6 @@
 services:
   ehq-next-app:
-    build: .
+    image: ghcr.io/eliasholm8/ehq-next-app:latest
     ports:
       - "3000:3000"
+    restart: unless-stopped
